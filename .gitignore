@@ -1,0 +1,6 @@
+aria2c.exe
+__pycache__/*
+build/*
+dist/*
+readme.txt
+test.txt
