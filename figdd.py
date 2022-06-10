@@ -5,6 +5,7 @@ from urllib.parse import urlparse
 import urllib.request
 import configparser
 import sys
+import time
 
 # Read config
 config = configparser.ConfigParser()
@@ -110,6 +111,9 @@ if downloadconfirmation == "Y" or downloadconfirmation == "y":
     print("Downloading " + drivername + " version " + version + "...")
     if igdl == "aria2c":
         os.system("aria2c -x 16 -s 16 " + downloadurl)
+        print("Download complete!")
+        print("You can find your driver files at the same directory where FIGDD is on. Double-click on the driver to start installing. Exiting in 5 seconds...")
+        time.sleep(5000)
 
 else:
     print("Abort download.")
