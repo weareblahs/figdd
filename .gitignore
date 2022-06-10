@@ -4,3 +4,4 @@ build/*
 dist/*
 readme.txt
 test.txt
+releases/*
